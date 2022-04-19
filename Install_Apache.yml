@@ -1,0 +1,13 @@
+---
+- hosts: web
+  remote_user: root
+  become: yes
+  tasks:
+  - name: Install Apche
+    apt:
+      name: apache2
+      state: present
+  - name: Remove apche
+    apt:
+      name: apache2
+      state: absent
