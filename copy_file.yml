@@ -5,7 +5,7 @@
   tasks:
     - name: copy src.txt as dest.txt in the same dir 
       copy:
-        src: files/src.txt
-        dest: files/dest.txt
+        src: /home/andrewoo/src.txt
+        dest: /home/andrewoo/dest.txt
       tags:
         - simple_copy
